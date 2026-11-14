@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "g1dance"
+version = "0.1.0"
+description = "Unitree G1 dancing: motion tracking + AMP + PPO on Isaac Lab 3.0"
+requires-python = ">=3.12"
+# torch / numpy / isaaclab / rsl-rl-lib are provided by the Isaac Lab environment.
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest"]
+data = ["mujoco"]  # scripts/data/clean_motion.py: foot geometry, FK and leg IK for the motion cleanup
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
