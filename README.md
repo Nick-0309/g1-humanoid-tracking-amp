@@ -6,6 +6,7 @@
 
 - `media/tracking.mp4` — 纯跟踪策略
 - `media/amp.mp4` — 加入 AMP 之后
+- `media/landing.mp4` — 加入着地奖励之后
 
 ## 结果
 
